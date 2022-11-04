@@ -1,0 +1,5 @@
+<input #myVariable type="text" (keyup)="0" /><!-- do nothing-->
+<!-- (keyup)="0" is mandatory to make angular refresh --> 
+<!-- #myVariable local template reference variable -->
+<button (click)="sayHello(myVariable)">Say Hello</button>
+<p>{{myVariable.value}}</p>
